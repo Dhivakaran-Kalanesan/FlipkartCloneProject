@@ -242,6 +242,7 @@ html {
     }
     .scrollbtn
     {
+        width:0vw;
         visibility: hidden;
     }
     .eproducts
