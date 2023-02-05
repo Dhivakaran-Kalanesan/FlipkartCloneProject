@@ -2,6 +2,10 @@
 
 
 
+
+
+
+
 let img = document.getElementById("slimage");
 
 let prebtn = document.querySelector(".pre");
@@ -59,59 +63,71 @@ setInterval(nxt , 3000) ;
 
 let btns1 = document.getElementsByClassName("btns1") ;
 
-let btn2 = document.getElementsByClassName("btns2") ;
+let btns2 = document.getElementsByClassName("btns2") ;
 
 let elecon = document.getElementById("eleproducts");
+btns1[0].style.visibility="hidden";
 
 function tnxt() {
     
     elecon.style.transform = "translateX(-600px)" ;
     elecon.style.transition ="0.5s";
+    btns2[0].style.visibility="hidden";
+    btns1[0].style.visibility="visible";
 
 }
 function tpre() {
     
     elecon.style.transform = "translateX(0px)" ;
     elecon.style.transition ="0.5s"
-
+    btns1[0].style.visibility="hidden";
+    btns2[0].style.visibility="visible";
 }
 
 let btns11 = document.getElementsByClassName("btns11") ;
 
-let btn22 = document.getElementsByClassName("btns22") ;
+let btns22 = document.getElementsByClassName("btns22") ;
 
 let elecon1 = document.getElementById("eleproducts1");
 
+btns11[0].style.visibility="hidden";
 function tnxt1() {
     
     elecon1.style.transform = "translateX(-600px)" ;
-    elecon1.style.transition ="0.5s"
+    elecon1.style.transition ="0.5s";
+    btns22[0].style.visibility="hidden";
+    btns11[0].style.visibility="visible";
 
 }
 function tpre1() {
     
     elecon1.style.transform = "translateX(0px)" ;
-    elecon1.style.transition ="0.5s"
-
+    elecon1.style.transition ="0.5s";
+    btns11[0].style.visibility="hidden";
+    btns22[0].style.visibility="visible";
 }
 
 
 let btns13 = document.getElementsByClassName("btns13") ;
 
-let btn23 = document.getElementsByClassName("btns23") ;
+let btns23 = document.getElementsByClassName("btns23") ;
 
 let elecon3 = document.getElementById("eleproducts3");
-
+btns13[0].style.visibility="hidden";
 function tnxt3() {
     
     elecon3.style.transform = "translateX(-600px)" ;
-    elecon3.style.transition ="0.5s"
-
+    elecon3.style.transition ="0.5s";
+    btns23[0].style.visibility="hidden";
+    btns13[0].style.visibility="visible";
 }
 function tpre3() {
     
     elecon3.style.transform = "translateX(0px)" ;
-    elecon3.style.transition ="0.5s"
+    elecon3.style.transition ="0.5s";
+    btns13[0].style.visibility="hidden";
+    btns23[0].style.visibility="visible";
 
 }
+
 
